@@ -142,7 +142,11 @@ export default function Home() {
 
           <motion.div style={{ y: heroImgY }} className="mt-14 md:mt-20">
             <div className="rounded-[32px] overflow-hidden hairline bg-white softshadow">
-              <img src={HERO_IMAGE} alt="Vishnukant hero" className="w-full h-[320px] md:h-[420px] object-cover" />
+<img
+  src={HERO_IMAGE}
+  alt="Vishnukantr portrait"
+  className="w-full h-[520px] object-cover object-[center_20%]"
+/>
             </div>
             <p className="mt-3 text-xs text-neutral-500">Tip: replace the hero image with your portrait for instant personalization.</p>
           </motion.div>
