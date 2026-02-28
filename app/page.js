@@ -376,63 +376,69 @@ export default function Home() {
   </div>
 </section>
 {/* BRANDS & PARTNERS */}
-<section className="py-16 md:py-20 bg-neutral-50 px-6 md:px-10 lg:px-14">
+<section className="py-20 md:py-28 bg-gradient-to-b from-neutral-50 to-white px-6 md:px-10 lg:px-14">
   <div className="mx-auto max-w-6xl">
+
     <Reveal>
       <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">
-        Brands & Partners
+        Brands & Institutions
       </p>
-      <h2 className="mt-3 text-2xl md:text-3xl font-semibold tracking-tight">
-        Work spanning global brands, agencies, government bodies, and high-trust ecosystems.
+
+      <h2 className="mt-4 text-3xl md:text-4xl font-semibold tracking-tight leading-tight">
+        Trusted by global brands, agencies, and government bodies.
       </h2>
-      <p className="mt-3 text-sm text-neutral-600">
-        Selected highlights from marketing + growth + partnerships experience (UAE, UK, India).
+
+      <p className="mt-4 text-base text-neutral-600 max-w-2xl">
+        Selected work across marketing intelligence, partnerships, regulatory execution, and cross-market growth (UAE, UK, India).
       </p>
     </Reveal>
 
-    <div className="mt-10 rounded-3xl bg-white ring-1 ring-neutral-200 p-6 md:p-8 softshadow">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-8 items-center">
+    {/* Logo Grid Container */}
+    <div className="mt-14 rounded-3xl bg-white ring-1 ring-neutral-200 p-8 md:p-10 shadow-sm">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-10 gap-x-10 items-center">
+
         {[
-          { name: "BBC", src: "/logos/bbc.png" },
-          { name: "BBC iPlayer", src: "/logos/bbciplayer.png" },
-          { name: "UKTV", src: "/logos/uktv.png" },
-          { name: "Channel 4", src: "/logos/channel4.png" },
-
-          { name: "BMW", src: "/logos/bmw.png" },
-          { name: "Peugeot", src: "/logos/peugeot.png" },
-          { name: "Fiat", src: "/logos/fiat.png" },
-
-          { name: "Nestle", src: "/logos/nestle.png" },
-          { name: "Mars", src: "/logos/mars.png" },
-          { name: "Philips", src: "/logos/philips.png" },
-
-          { name: "Dubai Media Council", src: "/logos/dubaimediacouncil.png" },
-          { name: "Dubai Municipality", src: "/logos/dubaimunicipality.png" },
-          { name: "Dubai RTA", src: "/logos/rta.png" },
-
-          { name: "AUE", src: "/logos/aue.png" },
-          { name: "Biocon", src: "/logos/biocon.png" },
-          { name: "Apollo Tyres", src: "/logos/apollotyres.png" },
-          { name: "Piramal", src: "/logos/piramal.png" },
-
-          { name: "THESAY Pharma", src: "/logos/thesaypharma.png" },
-          { name: "THESAY Investments", src: "/logos/thesayinvestments.png" },
-          { name: "Dial Smith", src: "/logos/dialsmith.png" },
-        ].map((b) => (
-          <div key={b.name} className="flex items-center justify-center">
-            <img
-              src={b.src}
-              alt={b.name}
-              className="h-8 md:h-9 w-auto opacity-90 hover:opacity-100 transition duration-300"
-              loading="lazy"
-            />
+          "bbc.png",
+          "bbciplayer.png",
+          "uktv.png",
+          "channel4.png",
+          "bmw.png",
+          "peugeot.png",
+          "fiat.png",
+          "nestle.png",
+          "mars.png",
+          "philips.png",
+          "dubaimediacouncil.png",
+          "dubaimunicipality.png",
+          "rta.png",
+          "aue.png",
+          "biocon.png",
+          "apollotyres.png",
+          "piramal.png",
+          "thesaypharma.png",
+          "thesayinvestments.png",
+          "dialsmith.png",
+        ].map((file) => (
+          <div
+            key={file}
+            className="flex items-center justify-center group"
+          >
+            <div className="h-12 w-full max-w-[150px] flex items-center justify-center">
+              <img
+                src={`/logos/${file}`}
+                alt={file.replace(".png", "")}
+                className="max-h-10 w-auto opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition duration-500 ease-out"
+                loading="lazy"
+              />
+            </div>
           </div>
         ))}
+
       </div>
     </div>
+
   </div>
 </section>
-
 {/* WHAT I BUILD */}
 <section id="services" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
   <div className="mx-auto max-w-6xl">
