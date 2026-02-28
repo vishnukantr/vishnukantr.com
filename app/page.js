@@ -394,7 +394,7 @@ export default function Home() {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-8 items-center">
         {[
           { name: "BBC", src: "/logos/bbc.png" },
-          { name: "BBC iPlayer", src: "/logos/bbciplayer.png" },   // <— check filename
+          { name: "BBC iPlayer", src: "/logos/bbciplayer.png" },
           { name: "UKTV", src: "/logos/uktv.png" },
           { name: "Channel 4", src: "/logos/channel4.png" },
 
@@ -423,7 +423,7 @@ export default function Home() {
             <img
               src={b.src}
               alt={b.name}
-              className="h-8 md:h-9 w-auto opacity-90 hover:opacity-100 transition"
+              className="h-8 md:h-9 w-auto opacity-90 hover:opacity-100 transition duration-300"
               loading="lazy"
             />
           </div>
