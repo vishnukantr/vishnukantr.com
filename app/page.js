@@ -424,12 +424,13 @@ export default function Home() {
             className="flex items-center justify-center group"
           >
             <div className="h-12 w-full max-w-[150px] flex items-center justify-center">
-              <img
-                src={`/logos/${file}`}
-                alt={file.replace(".png", "")}
-                className="max-h-10 w-auto opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition duration-500 ease-out"
-                loading="lazy"
-              />
+<Image
+  src={`/logos/${file}`}
+  alt={file.replace(".png", "")}
+  width={160}
+  height={60}
+  className="object-contain opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition duration-500"
+/>
             </div>
           </div>
         ))}
