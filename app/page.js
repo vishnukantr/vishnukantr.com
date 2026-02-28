@@ -109,39 +109,48 @@ export default function Home() {
 
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
     <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      {/* LEFT SIDE – TEXT */}
+      
+      {/* LEFT */}
       <div>
         <p className="text-xs tracking-widest text-neutral-500 uppercase mb-4">
-          Growth • Partnerships • Cultural Platforms
+          Precision First
         </p>
 
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
           Vishnukant Ramachandran
         </h1>
 
-        <p className="mt-6 text-lg text-neutral-600 max-w-xl">
-          Founder-minded Growth Strategist & Partnership Architect — building
-          cross-market expansion, premium narratives, and scalable ecosystems
-          across the UAE and global markets.
+        <p className="mt-3 text-lg md:text-xl text-neutral-700 font-medium">
+          Growth Strategist & Partnership Architect
         </p>
 
-        <div className="mt-8 flex gap-4">
+        <p className="mt-6 text-lg text-neutral-600 max-w-xl">
+          Driving cross-market expansion, strategic partnerships, and cultural platforms across the UAE and global markets.
+        </p>
+
+        <p className="mt-6 text-sm text-neutral-500">
+          Dubai-based | UAE Golden Visa | UK-educated | 5+ years international experience
+        </p>
+
+        <div className="mt-8 flex gap-4 flex-wrap">
           <a href="#impact" className="px-6 py-3 bg-black text-white rounded-full">
-            View Impact
+            View Selected Work
           </a>
-          <a href="#cv" className="px-6 py-3 border border-neutral-300 rounded-full">
-            Download CV
+          <a href="#contact" className="px-6 py-3 border border-neutral-300 rounded-full">
+            Connect
           </a>
         </div>
       </div>
-      {/* RIGHT SIDE – IMAGE */}
-    <motion.div className="relative" style={{ y: heroImgY }}>
+
+      {/* RIGHT */}
+      <motion.div className="relative" style={{ y: heroImgY }}>
         <img
           src={HERO_IMAGE}
           alt="Vishnukantr portrait"
           className="w-full h-auto rounded-3xl object-contain"
         />
       </motion.div>
+
     </div>
   </div>
 </motion.section>
