@@ -388,31 +388,31 @@ export default function Home() {
     </Reveal>
 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
   {[
-    { name: "BBC", src: "/logos/bbc.png" },
-    { name: "BBC iPlayer", src: "/logos/bbc-iplayer.png" },
-    { name: "UKTV", src: "/logos/uktv.png" },
-    { name: "Channel 4", src: "/logos/channel4.png" },
+    { name: "bbc", src: "/logos/bbc.png" },
+    { name: "bbciplayer", src: "/logos/bbc-iplayer.png" },
+    { name: "uktv", src: "/logos/uktv.png" },
+    { name: "channel4", src: "/logos/channel4.png" },
 
-    { name: "BMW", src: "/logos/bmw.png" },
-    { name: "Peugeot", src: "/logos/peugeot.png" },
-    { name: "Fiat", src: "/logos/fiat.png" },
+    { name: "bmw", src: "/logos/bmw.png" },
+    { name: "peugeot", src: "/logos/peugeot.png" },
+    { name: "fiat", src: "/logos/fiat.png" },
 
-    { name: "Nestle", src: "/logos/nestle.png" },
-    { name: "Mars", src: "/logos/mars.png" },
-    { name: "Philips", src: "/logos/philips.png" },
+    { name: "nestle", src: "/logos/nestle.png" },
+    { name: "mars", src: "/logos/mars.png" },
+    { name: "philips", src: "/logos/philips.png" },
 
-    { name: "Dubai Media Council", src: "/logos/dubai-media-council.png" },
-    { name: "Dubai Municipality", src: "/logos/dubai-municipality.png" },
-    { name: "Dubai RTA", src: "/logos/dubai-rta.png" },
+    { name: "dubaimediacouncil", src: "/logos/dubaimediacouncil.png" },
+    { name: "dubaimunicipality", src: "/logos/dubaimunicipality.png" },
+    { name: "rta", src: "/logos/rta.png" },
 
-    { name: "American University in the Emirates", src: "/logos/aue.png" },
-    { name: "Biocon", src: "/logos/biocon.png" },
-    { name: "Apollo Tyres", src: "/logos/apollo-tyres.png" },
-    { name: "Piramal", src: "/logos/piramal.png" },
+    { name: "aue", src: "/logos/aue.png" },
+    { name: "biocon", src: "/logos/biocon.png" },
+    { name: "apollotyres", src: "/logos/apollotyres.png" },
+    { name: "piramal", src: "/logos/piramal.png" },
 
-    { name: "THESAY Pharma", src: "/logos/thesay-pharma.png" },
-    { name: "THESAY Investments", src: "/logos/thesay-investments.png" },
-    { name: "Dial Smith", src: "/logos/dial-smith.png" },
+    { name: "thesaypharma", src: "/logos/thesaypharma.png" },
+    { name: "thesayinvestments", src: "/logos/thesayinvestments.png" },
+    { name: "dialsmith", src: "/logos/dialsmith.png" },
   ].map((b) => (
     <div key={b.name} className="flex items-center justify-center">
       <img
