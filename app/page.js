@@ -315,6 +315,79 @@ export default function Home() {
     </div>
   </div>
 </section>
+{/* WHAT I BUILD */}
+<section id="services" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
+  <div className="mx-auto max-w-6xl">
+    <Reveal>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">What I Build</p>
+      <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
+        For organisations, founders, and partners.
+      </h2>
+    </Reveal>
+
+    <Reveal>
+      <div className="mt-12 grid md:grid-cols-2 gap-6">
+        {[
+          {
+            title: "Market Entry & Business Development",
+            desc: "Go-to-market planning, partnership acquisition, revenue structuring.",
+          },
+          {
+            title: "Strategic Partnerships",
+            desc: "Cross-border collaborations, institutional alignment, ecosystem building.",
+          },
+          {
+            title: "Brand & Growth Strategy",
+            desc: "Positioning, narrative clarity, audience expansion.",
+          },
+          {
+            title: "Cultural Intelligence & Experience Design",
+            desc: "Embedding local authenticity into brand and service environments.",
+          },
+          {
+            title: "Digital & Performance Strategy",
+            desc: "Campaign architecture, paid acquisition structure, analytics-driven optimisation.",
+          },
+        ].map((s) => (
+          <div key={s.title} className="rounded-[28px] hairline bg-white p-7 softshadow">
+            <p className="text-xs tracking-widest uppercase text-neutral-500">{s.title}</p>
+            <p className="mt-3 text-sm text-neutral-600">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </Reveal>
+  </div>
+</section>
+{/* PHILOSOPHY */}
+<section id="philosophy" className="bg-neutral-950 text-white py-24 md:py-32 px-6 md:px-10 lg:px-14">
+  <div className="mx-auto max-w-6xl">
+    <Reveal>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">Philosophy</p>
+      <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
+        I build where structure meets vision.
+      </h2>
+      <div className="mt-8 space-y-3 text-white/75 text-base md:text-lg max-w-3xl">
+        <p>Growth without cultural understanding is noise.</p>
+        <p>Strategy without execution is theory.</p>
+        <p>Partnerships scale only when trust is engineered.</p>
+      </div>
+    </Reveal>
+  </div>
+</section>
+{/* LONG-TERM VISION */}
+<section id="vision" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
+  <div className="mx-auto max-w-6xl">
+    <Reveal>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">Long-term Vision</p>
+      <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
+        Building platforms at the intersection of culture, commerce, and global markets.
+      </h2>
+      <p className="mt-6 text-base md:text-lg text-neutral-600 max-w-3xl">
+        Focused on the UAE as a long-term strategic base — expanding across India and international ecosystems.
+      </p>
+    </Reveal>
+  </div>
+</section>
       {/* CV DOWNLOAD */}
       <section id="cv" className="py-24 md:py-32 px-6 md:px-10 lg:px-14 bg-neutral-50">
         <div className="mx-auto max-w-6xl">
@@ -346,34 +419,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section id="contact" className="py-24 md:py-32 bg-neutral-950 text-white px-6 md:px-10 lg:px-14">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">Contact</p>
-            <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-              Let’s build something that scales.
-            </h2>
-            <p className="mt-5 text-base md:text-lg text-white/70 max-w-3xl">
-              If you’re hiring for growth, partnerships, strategy, or building a cultural platform — I’m open to the right conversations.
-            </p>
+{/* CONTACT */}
+<section id="contact" className="py-24 md:py-32 bg-neutral-950 text-white px-6 md:px-10 lg:px-14">
+  <div className="mx-auto max-w-6xl">
+    <Reveal>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">Contact</p>
+      <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
+        Let’s build something that scales with integrity.
+      </h2>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-3">
-              <a href="mailto:youremail@example.com"
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-100 transition">
-                Email me
-              </a>
-              <a href="https://linkedin.com"
-                target="_blank" rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition">
-                LinkedIn
-              </a>
-            </div>
+      <p className="mt-5 text-base md:text-lg text-white/70 max-w-3xl">
+        Dubai, United Arab Emirates
+      </p>
 
-            <p className="mt-10 text-sm text-white/50">© {new Date().getFullYear()} Vishnukant Ramachandran</p>
-          </Reveal>
-        </div>
-      </section>
+      <div className="mt-10 flex flex-col sm:flex-row gap-3">
+        <a
+          href="mailto:youremail@example.com"
+          className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-100 transition"
+        >
+          Email
+        </a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+      <p className="mt-10 text-sm text-white/50">
+        © {new Date().getFullYear()} Vishnukant Ramachandran
+      </p>
+    </Reveal>
+  </div>
+</section>
     </main>
   );
 }
