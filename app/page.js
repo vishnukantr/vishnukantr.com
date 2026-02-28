@@ -243,48 +243,48 @@ export default function Home() {
       </section>
 
       {/* AMWAAJESSAKINA */}
-      <section id="amwaaj" className="py-28 md:py-36 px-6 md:px-10 lg:px-14">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">Platform Case Study</p>
-            <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-              Amwaajessakina — experience architecture, built to scale.
-            </h2>
-            <p className="mt-5 text-base md:text-lg text-neutral-600 max-w-3xl">
-              An Emirati-founded cultural experience platform redefining how visitors engage with authentic UAE heritage —
-              positioned for partnerships, corporate groups, and international travel distribution.
-            </p>
-          </Reveal>
+     <section id="amwaajessakina" className="bg-neutral-950 text-white">
+  <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14 py-16 md:py-24">
+    <div className="grid md:grid-cols-2 gap-10 items-start">
 
-          <div className="mt-14 grid lg:grid-cols-12 gap-8 items-center">
-            <Reveal>
-              <div className="lg:col-span-5">
-                <div className="rounded-[28px] bg-neutral-900 text-white p-7 softshadow">
-                  <p className="text-xs tracking-widest uppercase text-white/60">My role</p>
-                  <h3 className="mt-3 text-xl font-semibold tracking-tight">PR Director & Strategic Growth Lead</h3>
-                  <ul className="mt-5 space-y-2 text-sm text-white/80">
-                    <li>• Structured cross-border partner model (India)</li>
-                    <li>• Designed corporate immersion proposals</li>
-                    <li>• Built premium positioning & storytelling architecture</li>
-                    <li>• Enabled scalable distribution narrative</li>
-                  </ul>
+      {/* LEFT — IMAGE */}
+      <div className="rounded-3xl overflow-hidden bg-white/5 ring-1 ring-white/10">
+        <img
+          src={AMWAAJ_IMAGE}
+          alt="Amwaajessakina premium visual"
+          className="w-full h-[280px] md:h-[520px] object-cover"
+        />
+        <p className="px-4 py-3 text-xs text-white/60">
+          Replace this with a premium Amwaajessakina image (majlis / desert / hosting aesthetic).
+        </p>
+      </div>
 
-                  <div className="mt-7 flex flex-col sm:flex-row gap-3">
-                    <a href="https://www.amwaajessakina.com" target="_blank" rel="noreferrer"
-                      className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-100 transition">
-                      Visit amwaajessakina.com
-                    </a>
-                    <a href="#contact"
-                      className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition">
-                      Partner with us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          </div>
+      {/* RIGHT — TEXT */}
+      <div className="md:pt-4">
+        <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">Amwaajessakina</p>
+
+        <h2 className="mt-4 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
+          Cultural experiences, curated like a luxury product.
+        </h2>
+
+        <div className="mt-6 space-y-4 text-white/75">
+          <p>Structured, premium Emirati hosting aesthetics — designed for discerning guests.</p>
+          <p>Built for partnerships, cultural storytelling, and high-trust community access.</p>
         </div>
-      </section>
+
+        <a
+          href="https://amwaajessakina.com"
+          className="mt-8 inline-flex items-center rounded-full bg-white text-black px-6 py-3 text-sm font-medium"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Visit amwaajessakina.com
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* CV DOWNLOAD */}
       <section id="cv" className="py-24 md:py-32 px-6 md:px-10 lg:px-14 bg-neutral-50">
