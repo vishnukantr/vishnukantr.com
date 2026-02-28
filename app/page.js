@@ -30,7 +30,7 @@ function Nav() {
 
             <nav className="hidden md:flex items-center gap-7 text-sm text-neutral-700">
               <a className="hover:text-neutral-900" href="#impact">Impact</a>
-              <a className="hover:text-neutral-900" href="#amwaaj">Amwaajessakina</a>
+              <a className="hover:text-neutral-900" href="#amwaajessakina">Amwaajessakina</a>
               <a className="hover:text-neutral-900" href="#cv">CV</a>
               <a className="hover:text-neutral-900" href="#contact">Contact</a>
             </nav>
