@@ -259,32 +259,48 @@ export default function Home() {
     </div>
   </div>
 </section>
-      {/* AMWAAJESSAKINA */}
-     <section id="amwaajessakina" className="bg-neutral-950 text-white">
+      {/* PLATFORM CASE STUDY — AMWAAJESSAKINA */}
+<section id="amwaajessakina" className="bg-neutral-950 text-white">
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14 py-16 md:py-24">
     <div className="grid md:grid-cols-2 gap-10 items-start">
 
       {/* LEFT — IMAGE */}
-      <div className="rounded-3xl overflow-hidden bg-white/5 ring-1 ring-white/10">
+      <motion.div className="rounded-3xl overflow-hidden bg-white/5 ring-1 ring-white/10" style={{ y: amwaajImgY }}>
         <img
           src={AMWAAJ_IMAGE}
           alt="Amwaajessakina premium visual"
           className="w-full h-[280px] md:h-[520px] object-cover"
         />
-      </div>
+      </motion.div>
 
       {/* RIGHT — TEXT */}
       <div className="md:pt-4">
-        <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">Amwaajessakina</p>
+        <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">
+          Platform Case Study — Amwaajessakina
+        </p>
 
         <h2 className="mt-4 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-          Cultural experiences, curated like a luxury product.
+          An Emirati-founded cultural experience platform redefining how visitors engage with authentic UAE heritage.
         </h2>
 
-        <div className="mt-6 space-y-4 text-white/75">
-          <p>Structured, premium Emirati hosting aesthetics — designed for discerning guests.</p>
-          <p>Built for partnerships, cultural storytelling, and high-trust community access.</p>
-        </div>
+        <p className="mt-6 text-white/75">
+          As PR Director & Strategic Growth Lead, I:
+        </p>
+
+        <ul className="mt-5 space-y-3 text-white/75 list-disc pl-5">
+          <li>Structured cross-border travel partner models (India market)</li>
+          <li>Developed premium positioning for curated Emirati home experiences</li>
+          <li>Designed corporate cultural immersion proposals (including strategic alignment concepts for Emirates)</li>
+          <li>Led storytelling architecture across digital channels</li>
+        </ul>
+
+        <p className="mt-6 text-white/75">
+          From local cultural initiative → scalable partnership-driven platform.
+        </p>
+
+        <p className="mt-6 text-lg font-medium">
+          This is not tourism. <span className="text-white/70">It’s experience architecture.</span>
+        </p>
 
         <a
           href="https://amwaajessakina.com"
@@ -299,7 +315,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
       {/* CV DOWNLOAD */}
       <section id="cv" className="py-24 md:py-32 px-6 md:px-10 lg:px-14 bg-neutral-50">
         <div className="mx-auto max-w-6xl">
