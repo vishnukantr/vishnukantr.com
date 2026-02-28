@@ -102,6 +102,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]" />
 
         <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
+    <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div style={{ scale: heroScale, y: heroY, opacity: heroOpacity }} className="pt-8 md:pt-14">
             <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">
               Growth • Partnerships • Cultural Platforms
@@ -139,13 +140,14 @@ export default function Home() {
               ))}
             </div>
           </motion.div>
+  </div>
 
           <motion.div style={{ y: heroImgY }} className="mt-14 md:mt-20">
             <div className="rounded-[32px] overflow-hidden hairline bg-white softshadow">
 <img
   src={HERO_IMAGE}
   alt="Vishnukantr portrait"
-  className="w-full h-[520px] object-cover object-[center_20%]"
+  className="w-full rounded-3xl object-contain"
 />
             </div>
             <p className="mt-3 text-xs text-neutral-500">Tip: replace the hero image with your portrait for instant personalization.</p>
