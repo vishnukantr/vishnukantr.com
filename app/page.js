@@ -42,7 +42,7 @@ function Nav() {
             </div>
 
             <button
-className="px-6 py-3 rounded-full bg-amber-600 text-white hover:bg-amber-500 transition"
+className="px-6 py-3 rounded-full bg-[#9A5C2F] text-white hover:bg-[#8C4E24] transition"
               onClick={() => setOpen(v => !v)}
               aria-label="Open menu"
               aria-expanded={open}
