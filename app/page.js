@@ -141,9 +141,6 @@ export default function Home() {
           className="w-full h-auto rounded-3xl object-contain"
         />
       </div>
-
-    </div>
-  </div>
 </section>
         {/* Cinematic black transition */}
         <div className="mt-20 md:mt-28">
