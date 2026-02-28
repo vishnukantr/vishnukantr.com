@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 
 const HERO_IMAGE = "/images/hero.jpg";  
 const AMWAAJ_IMAGE = "/images/amwaajessakina.jpg";
+const ACCENT = "#9C7A2D";
+const ACCENT_HOVER = "#8A6A24";
 
 function Nav() {
   const [open, setOpen] = useState(false);
