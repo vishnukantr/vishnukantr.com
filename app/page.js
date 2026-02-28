@@ -254,9 +254,6 @@ export default function Home() {
           alt="Amwaajessakina premium visual"
           className="w-full h-[280px] md:h-[520px] object-cover"
         />
-        <p className="px-4 py-3 text-xs text-white/60">
-          Replace this with a premium Amwaajessakina image (majlis / desert / hosting aesthetic).
-        </p>
       </div>
 
       {/* RIGHT — TEXT */}
