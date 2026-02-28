@@ -397,7 +397,7 @@ export default function Home() {
     { name: "Peugeot", src: "/logos/peugeot.png" },
     { name: "Fiat", src: "/logos/fiat.png" },
 
-    { name: "Nestlé", src: "/logos/nestle.png" },
+    { name: "Nestle", src: "/logos/nestle.png" },
     { name: "Mars", src: "/logos/mars.png" },
     { name: "Philips", src: "/logos/philips.png" },
 
