@@ -390,42 +390,32 @@ export default function Home() {
     <div className="mt-10 rounded-3xl bg-white ring-1 ring-neutral-200 p-6 md:p-8 softshadow">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
         {[
-          { name: "BBC", src: "/logos/bbc.png" },
-          { name: "BBC iPlayer", src: "/logos/bbc-iplayer.png" },
-          { name: "UKTV", src: "/logos/uktv.png" },
-          { name: "Channel 4", src: "/logos/channel4.png" },
+  { name: "BBC", src: "/logos/bbc.png" },
+  { name: "BBC iPlayer", src: "/logos/bbc-iplayer.png" },
+  { name: "UKTV", src: "/logos/uktv.png" },
+  { name: "Channel 4", src: "/logos/channel4.png" },
 
-          { name: "BMW", src: "/logos/bmw.png" },
-          { name: "Peugeot", src: "/logos/peugeot.png" },
-          { name: "Fiat", src: "/logos/fiat.png" },
+  { name: "BMW", src: "/logos/bmw.png" },
+  { name: "Peugeot", src: "/logos/peugeot.png" },
+  { name: "Fiat", src: "/logos/fiat.png" },
 
-          { name: "Nestlé", src: "/logos/nestle.png" },
-          { name: "Mars", src: "/logos/mars.png" },
-          { name: "Philips", src: "/logos/philips.png" },
+  { name: "Nestlé", src: "/logos/nestle.png" },
+  { name: "Mars", src: "/logos/mars.png" },
+  { name: "Philips", src: "/logos/philips.png" },
 
-          { name: "Dubai Media Council", src: "/logos/dubai-media-council.png" },
-          { name: "Dubai Municipality", src: "/logos/dubai-municipality.png" },
-          { name: "Dubai RTA", src: "/logos/dubai-rta.png" },
+  { name: "Dubai Media Council", src: "/logos/dubai-media-council.png" },
+  { name: "Dubai Municipality", src: "/logos/dubai-municipality.png" },
+  { name: "Dubai RTA", src: "/logos/dubai-rta.png" },
 
-          { name: "American University in the Emirates", src: "/logos/aue.png" },
-          { name: "Biocon", src: "/logos/biocon.png" },
-          { name: "Apollo Tyres", src: "/logos/apollo-tyres.png" },
-          { name: "Piramal", src: "/logos/piramal.png" },
+  { name: "American University in the Emirates", src: "/logos/aue.png" },
+  { name: "Biocon", src: "/logos/biocon.png" },
+  { name: "Apollo Tyres", src: "/logos/apollo-tyres.png" },
+  { name: "Piramal", src: "/logos/piramal.png" },
 
-          { name: "THESAY Pharma", src: "/logos/thesay-pharma.png" },
-          { name: "THESAY Investments", src: "/logos/thesay-investments.png" },
-          { name: "Dial Smith", src: "/logos/dial-smith.png" },
-        ].map((b) => (
-          <div key={b.name} className="flex items-center justify-center">
-            <img
-              src={b.src}
-              alt={b.name}
-              className="h-8 md:h-9 w-auto opacity-85 hover:opacity-100 transition"
-              loading="lazy"
-              onError={(e) => {
-                // hides missing logos without breaking layout
-                e.currentTarget.style.display = "none";
-              }}
+  { name: "THESAY Pharma", src: "/logos/thesay-pharma.png" },
+  { name: "THESAY Investments", src: "/logos/thesay-investments.png" },
+  { name: "Dial Smith", src: "/logos/dial-smith.png" },
+]}
             />
           </div>
         ))}
