@@ -101,12 +101,14 @@ export default function Home() {
       <Nav />
 
       {/* HERO */}
-<section className="relative min-h-[100vh] pt-24">
+<motion.section
+  className="relative min-h-[100vh] pt-24"
+  style={{ scale: heroScale, y: heroY, opacity: heroOpacity }}
+>
   <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]" />
 
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
     <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
       {/* LEFT SIDE – TEXT */}
       <div>
         <p className="text-xs tracking-widest text-neutral-500 uppercase mb-4">
@@ -133,16 +135,16 @@ export default function Home() {
         </div>
       </div>
       {/* RIGHT SIDE – IMAGE */}
-   <div className="relative">
+    <motion.div className="relative" style={{ y: heroImgY }}>
         <img
           src={HERO_IMAGE}
           alt="Vishnukantr portrait"
           className="w-full h-auto rounded-3xl object-contain"
         />
-      </div>
+      </motion.div>
     </div>
   </div>
-</section>
+</motion.section>
         {/* Cinematic black transition */}
         <div className="mt-20 md:mt-28">
           <div className="bg-neutral-950 text-white">
