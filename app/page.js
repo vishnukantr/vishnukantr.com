@@ -172,37 +172,39 @@ export default function Home() {
           </div>
         </div>
 
-      {/* SNAPSHOT */}
-      <section className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">Executive Snapshot</p>
-            <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-              Clear, recruiter-ready signal in 10 seconds.
-            </h2>
-            <p className="mt-5 text-base md:text-lg text-neutral-600 max-w-3xl">
-              A concise view of how I operate: structured, cross-market, and execution-focused.
-            </p>
-          </Reveal>
+     {/* EXECUTIVE SNAPSHOT */}
+<section id="snapshot" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
+  <div className="mx-auto max-w-6xl">
+    <Reveal>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">
+        Executive Snapshot
+      </p>
+      <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
+        10-second clarity for hiring managers.
+      </h2>
+      <p className="mt-5 text-base md:text-lg text-neutral-600 max-w-3xl">
+        I operate at the intersection of business development, brand growth, and cultural strategy.
+      </p>
+    </Reveal>
 
-          <Reveal>
-            <div className="mt-12 grid md:grid-cols-3 gap-4 text-sm text-neutral-700">
-              {[
-                "UAE Golden Visa • Dubai-based",
-                "5+ years international markets (UAE, UK, India)",
-                "Business Development + Partnerships",
-                "Digital strategy + content systems",
-                "Regulatory & market launch execution",
-                "Data-backed decisioning and reporting",
-              ].map((t) => (
-                <div key={t} className="rounded-2xl hairline bg-white p-5 softshadow">
-                  {t}
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </div>
-      </section>
+    <Reveal>
+      <div className="mt-12 grid md:grid-cols-2 gap-4 text-sm text-neutral-800">
+        {[
+          "Led multi-market launches across UAE & GCC",
+          "Secured UAE Media Council regulatory approvals independently",
+          "Delivered 200% organic social growth for a healthcare brand",
+          "Built strategic travel & cultural partnerships in India & UAE",
+          "Delivered campaign dashboards for BMW, BBC, UKTV & global brands",
+          "Structured thinking. Market awareness. Execution focus.",
+        ].map((t) => (
+          <div key={t} className="rounded-2xl hairline bg-white p-5 softshadow">
+            {t}
+          </div>
+        ))}
+      </div>
+    </Reveal>
+  </div>
+</section>
 
       {/* IMPACT */}
       <section id="impact" className="py-24 md:py-32 px-6 md:px-10 lg:px-14 bg-neutral-50">
