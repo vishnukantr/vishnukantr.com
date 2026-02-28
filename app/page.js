@@ -4,8 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Reveal } from "@/components/Reveal";
 import { useEffect, useState } from "react";
 
-const HERO_IMAGE = "/images/hero.svg";   // replace with /images/hero.jpg
-const AMWAAJ_IMAGE = "/images/amwaaj.svg"; // replace with /images/amwaaj.jpg
+const HERO_IMAGE = "/images/hero.JPG";   
+const AMWAAJ_IMAGE = "/images/Amwaajes.jpg";
 
 function Nav() {
   const [open, setOpen] = useState(false);
