@@ -205,56 +205,60 @@ export default function Home() {
     </Reveal>
   </div>
 </section>
+{/* SELECTED IMPACT */}
+<section id="impact" className="py-24 md:py-32 px-6 md:px-10 lg:px-14 bg-neutral-50">
+  <div className="mx-auto max-w-6xl">
+    <Reveal>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">Selected Impact</p>
+      <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
+        Outcomes, not responsibilities.
+      </h2>
+    </Reveal>
 
-      {/* IMPACT */}
-      <section id="impact" className="py-24 md:py-32 px-6 md:px-10 lg:px-14 bg-neutral-50">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">Selected Impact</p>
-            <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-              Outcomes, not responsibilities.
-            </h2>
-          </Reveal>
-
-          <div className="mt-14 space-y-16">
-            {[
-              {
-                title: "Scaling cultural tourism beyond local audiences",
-                desc:
-                  "Structured India market-entry model for Amwaajessakina, securing travel partner agreements and positioning Emirati immersion as premium itinerary inclusion.",
-                tags: ["Partnerships", "GTM", "Market Entry"],
-              },
-              {
-                title: "Driving 200% brand growth",
-                desc:
-                  "Repositioned a healthcare brand digitally and built a multi-platform presence, improving organic growth and engagement through structured content systems.",
-                tags: ["Brand", "Content", "Growth"],
-              },
-              {
-                title: "Regulatory & market launch execution in the UAE",
-                desc:
-                  "Led Arabic publishing approvals and regulatory submissions independently — aligning stakeholders across compliance, printing, and distribution.",
-                tags: ["Regulatory", "Ops", "Stakeholders"],
-              },
-            ].map((c) => (
-              <Reveal key={c.title}>
-                <article className="rounded-[28px] hairline bg-white p-8 softshadow hover:translate-y-[-2px] transition">
-                  <div className="flex flex-wrap items-center gap-2">
-                    {c.tags.map((t) => (
-                      <span key={t} className="text-xs rounded-full bg-neutral-100 px-3 py-1 text-neutral-700">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                  <h3 className="mt-5 text-2xl font-semibold tracking-tight">{c.title}</h3>
-                  <p className="mt-4 text-neutral-600 max-w-3xl">{c.desc}</p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
+    <div className="mt-14 space-y-16">
+      {[
+        {
+          title: "Scaling Cultural Tourism Beyond Local Audiences",
+          desc:
+            "Structured India market-entry model for Amwaajessakina, securing travel partner agreements and positioning experiential Emirati culture as a premium itinerary inclusion. Expanded brand reach beyond residents to inbound international travelers.",
+          tags: ["Partnerships", "GTM", "Market Entry"],
+        },
+        {
+          title: "Driving 200% Brand Growth",
+          desc:
+            "Repositioned THESAY Pharma digitally, building structured multi-platform presence across LinkedIn, Instagram, and digital channels. Achieved a 200% increase in organic following and improved engagement by 25%.",
+          tags: ["Brand", "Content", "Growth"],
+        },
+        {
+          title: "Regulatory & Market Launch Execution in the UAE",
+          desc:
+            "Led Arabic publishing approvals and UAE Media Council submissions independently. Built relationships across regulatory bodies, printers, and distributors — ensuring compliant and successful publication launches.",
+          tags: ["Regulatory", "Ops", "Stakeholders"],
+        },
+        {
+          title: "Data-Driven Campaign Intelligence",
+          desc:
+            "Delivered campaign analysis dashboards for BMW, UKTV, BBC, and Nestlé at The Blinc Partnership (London). Simplified complex research data into executive-level decision tools used for marketing optimisation.",
+          tags: ["Analytics", "Dashboards", "Optimization"],
+        },
+      ].map((c) => (
+        <Reveal key={c.title}>
+          <article className="rounded-[28px] hairline bg-white p-8 softshadow hover:translate-y-[-2px] transition">
+            <div className="flex flex-wrap items-center gap-2">
+              {c.tags.map((t) => (
+                <span key={t} className="text-xs rounded-full bg-neutral-100 px-3 py-1 text-neutral-700">
+                  {t}
+                </span>
+              ))}
+            </div>
+            <h3 className="mt-5 text-2xl font-semibold tracking-tight">{c.title}</h3>
+            <p className="mt-4 text-neutral-600 max-w-3xl">{c.desc}</p>
+          </article>
+        </Reveal>
+      ))}
+    </div>
+  </div>
+</section>
       {/* AMWAAJESSAKINA */}
      <section id="amwaajessakina" className="bg-neutral-950 text-white">
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14 py-16 md:py-24">
