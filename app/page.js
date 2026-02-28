@@ -160,7 +160,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
 
       {/* SNAPSHOT */}
       <section className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
