@@ -20,10 +20,13 @@ function Nav() {
       <div className="glass">
         <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
           <div className="h-16 flex items-center justify-between">
-            <a href="#top" className="flex items-center gap-2">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-neutral-900 text-white text-sm font-semibold">V</span>
-              <span className="text-sm font-semibold tracking-tight">vishnukantrr</span>
-            </a>
+           <a href="#top" className="flex items-center">
+  <img
+    src="/logo.png"
+    alt="Vishnukant"
+    className="h-9 w-auto"
+  />
+</a>
 
             <nav className="hidden md:flex items-center gap-7 text-sm text-neutral-700">
               <a className="hover:text-neutral-900" href="#impact">Impact</a>
