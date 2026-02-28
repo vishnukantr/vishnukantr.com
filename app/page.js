@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { useEffect, useState } from "react";
 
 const HERO_IMAGE = "/images/hero.JPG";   
-const AMWAAJ_IMAGE = "/images/Amwaajes.jpg";
+const AMWAAJ_IMAGE = "/images/Amwaajessakina.jpg";
 
 function Nav() {
   const [open, setOpen] = useState(false);
