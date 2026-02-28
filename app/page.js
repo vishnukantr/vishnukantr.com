@@ -23,7 +23,7 @@ function Nav() {
            <a href="#top" className="flex items-center">
   <img
     src="/images/logo-vk.png"
-    alt="Logo vk"
+    alt="logo vk"
     className="h-9 w-auto"
   />
 </a>
