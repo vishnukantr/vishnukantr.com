@@ -319,6 +319,62 @@ export default function Home() {
     </div>
   </div>
 </section>
+{/* AMWAAJESSAKINA — PREMIUM VISUAL STORYTELLING */}
+<section className="bg-neutral-950 text-white">
+  <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14 py-16 md:py-24">
+    <Reveal>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">
+        Amwaajessakina — Premium Visual Storytelling
+      </p>
+      <h2 className="mt-4 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
+        A luxury narrative, built through detail, light, and cultural intimacy.
+      </h2>
+      <p className="mt-6 text-white/70 max-w-3xl">
+        Designed to feel like an invitation — not a tour. The experience is communicated through
+        hosting aesthetics, warm ritual, and high-trust access.
+      </p>
+    </Reveal>
+
+    <div className="mt-12 grid lg:grid-cols-3 gap-6">
+      {[
+        {
+          title: "Majlis & Hosting Ritual",
+          desc: "Coffee, dates, fragrance, and conversation — premium hospitality as a cultural language.",
+          tag: "Hosting"
+        },
+        {
+          title: "Heritage in Modern Form",
+          desc: "Authenticity without cliché — clean, refined storytelling that respects Emirati identity.",
+          tag: "Heritage"
+        },
+        {
+          title: "Partnership-Ready Platform",
+          desc: "Built for travel partners, corporate groups, and cultural programming with trust engineered in.",
+          tag: "Partnerships"
+        },
+      ].map((card) => (
+        <Reveal key={card.title}>
+          <div className="rounded-[28px] bg-white/5 ring-1 ring-white/10 p-7 softshadow">
+            <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">{card.tag}</p>
+            <h3 className="mt-3 text-xl font-semibold">{card.title}</h3>
+            <p className="mt-3 text-white/70">{card.desc}</p>
+          </div>
+        </Reveal>
+      ))}
+    </div>
+
+    {/* Optional: a “gallery strip” feel using your same AMWAAJ_IMAGE for now */}
+    <Reveal>
+      <div className="mt-10 rounded-3xl overflow-hidden ring-1 ring-white/10 bg-white/5">
+        <div className="grid md:grid-cols-3">
+          <img src={AMWAAJ_IMAGE} className="h-[220px] w-full object-cover" alt="Amwaajessakina visual 1" />
+          <img src={AMWAAJ_IMAGE} className="h-[220px] w-full object-cover" alt="Amwaajessakina visual 2" />
+          <img src={AMWAAJ_IMAGE} className="h-[220px] w-full object-cover" alt="Amwaajessakina visual 3" />
+        </div>
+      </div>
+    </Reveal>
+  </div>
+</section>
 {/* WHAT I BUILD */}
 <section id="services" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
   <div className="mx-auto max-w-6xl">
@@ -422,62 +478,6 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
-{/* AMWAAJESSAKINA — PREMIUM VISUAL STORYTELLING */}
-<section className="bg-neutral-950 text-white">
-  <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14 py-16 md:py-24">
-    <Reveal>
-      <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">
-        Amwaajessakina — Premium Visual Storytelling
-      </p>
-      <h2 className="mt-4 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-        A luxury narrative, built through detail, light, and cultural intimacy.
-      </h2>
-      <p className="mt-6 text-white/70 max-w-3xl">
-        Designed to feel like an invitation — not a tour. The experience is communicated through
-        hosting aesthetics, warm ritual, and high-trust access.
-      </p>
-    </Reveal>
-
-    <div className="mt-12 grid lg:grid-cols-3 gap-6">
-      {[
-        {
-          title: "Majlis & Hosting Ritual",
-          desc: "Coffee, dates, fragrance, and conversation — premium hospitality as a cultural language.",
-          tag: "Hosting"
-        },
-        {
-          title: "Heritage in Modern Form",
-          desc: "Authenticity without cliché — clean, refined storytelling that respects Emirati identity.",
-          tag: "Heritage"
-        },
-        {
-          title: "Partnership-Ready Platform",
-          desc: "Built for travel partners, corporate groups, and cultural programming with trust engineered in.",
-          tag: "Partnerships"
-        },
-      ].map((card) => (
-        <Reveal key={card.title}>
-          <div className="rounded-[28px] bg-white/5 ring-1 ring-white/10 p-7 softshadow">
-            <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">{card.tag}</p>
-            <h3 className="mt-3 text-xl font-semibold">{card.title}</h3>
-            <p className="mt-3 text-white/70">{card.desc}</p>
-          </div>
-        </Reveal>
-      ))}
-    </div>
-
-    {/* Optional: a “gallery strip” feel using your same AMWAAJ_IMAGE for now */}
-    <Reveal>
-      <div className="mt-10 rounded-3xl overflow-hidden ring-1 ring-white/10 bg-white/5">
-        <div className="grid md:grid-cols-3">
-          <img src={AMWAAJ_IMAGE} className="h-[220px] w-full object-cover" alt="Amwaajessakina visual 1" />
-          <img src={AMWAAJ_IMAGE} className="h-[220px] w-full object-cover" alt="Amwaajessakina visual 2" />
-          <img src={AMWAAJ_IMAGE} className="h-[220px] w-full object-cover" alt="Amwaajessakina visual 3" />
-        </div>
-      </div>
-    </Reveal>
-  </div>
-</section>
 {/* CONTACT */}
 <section id="contact" className="py-24 md:py-32 bg-neutral-950 text-white px-6 md:px-10 lg:px-14">
   <div className="mx-auto max-w-6xl">
