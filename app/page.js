@@ -375,6 +375,68 @@ export default function Home() {
     </Reveal>
   </div>
 </section>
+{/* BRANDS & PARTNERS */}
+<section className="py-16 md:py-20 bg-neutral-50 px-6 md:px-10 lg:px-14">
+  <div className="mx-auto max-w-6xl">
+    <Reveal>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">
+        Brands & Partners
+      </p>
+      <h2 className="mt-3 text-2xl md:text-3xl font-semibold tracking-tight">
+        Work spanning global brands, agencies, government bodies, and high-trust ecosystems.
+      </h2>
+    </Reveal>
+
+    <div className="mt-10 rounded-3xl bg-white ring-1 ring-neutral-200 p-6 md:p-8 softshadow">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
+        {[
+          { name: "BBC", src: "/logos/bbc.png" },
+          { name: "BBC iPlayer", src: "/logos/bbc-iplayer.png" },
+          { name: "UKTV", src: "/logos/uktv.png" },
+          { name: "Channel 4", src: "/logos/channel4.png" },
+
+          { name: "BMW", src: "/logos/bmw.png" },
+          { name: "Peugeot", src: "/logos/peugeot.png" },
+          { name: "Fiat", src: "/logos/fiat.png" },
+
+          { name: "Nestlé", src: "/logos/nestle.png" },
+          { name: "Mars", src: "/logos/mars.png" },
+          { name: "Philips", src: "/logos/philips.png" },
+
+          { name: "Dubai Media Council", src: "/logos/dubai-media-council.png" },
+          { name: "Dubai Municipality", src: "/logos/dubai-municipality.png" },
+          { name: "Dubai RTA", src: "/logos/dubai-rta.png" },
+
+          { name: "American University in the Emirates", src: "/logos/aue.png" },
+          { name: "Biocon", src: "/logos/biocon.png" },
+          { name: "Apollo Tyres", src: "/logos/apollo-tyres.png" },
+          { name: "Piramal", src: "/logos/piramal.png" },
+
+          { name: "THESAY Pharma", src: "/logos/thesay-pharma.png" },
+          { name: "THESAY Investments", src: "/logos/thesay-investments.png" },
+          { name: "Dial Smith", src: "/logos/dial-smith.png" },
+        ].map((b) => (
+          <div key={b.name} className="flex items-center justify-center">
+            <img
+              src={b.src}
+              alt={b.name}
+              className="h-8 md:h-9 w-auto opacity-85 hover:opacity-100 transition"
+              loading="lazy"
+              onError={(e) => {
+                // hides missing logos without breaking layout
+                e.currentTarget.style.display = "none";
+              }}
+            />
+          </div>
+        ))}
+      </div>
+
+      <p className="mt-6 text-sm text-neutral-500">
+        Selected highlights from marketing + growth + partnerships experience (UAE, UK, India).
+      </p>
+    </div>
+  </div>
+</section>
 {/* WHAT I BUILD */}
 <section id="services" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
   <div className="mx-auto max-w-6xl">
