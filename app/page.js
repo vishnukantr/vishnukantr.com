@@ -101,10 +101,8 @@ export default function Home() {
       <section className="relative min-h-[100vh] pt-24">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]" />
 
-        <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
-   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
-
-  <div className="mt-14 md:mt-20 grid md:grid-cols-2 gap-12 items-center">
+    <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
+<div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
     {/* LEFT SIDE – TEXT */}
     <div>
@@ -137,7 +135,7 @@ export default function Home() {
       <img
         src={HERO_IMAGE}
         alt="Vishnukantr portrait"
-        className="w-full rounded-3xl object-contain"
+        className="w-full h-auto rounded-3xl object-contain"
       />
     </div>
 
