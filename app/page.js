@@ -44,15 +44,15 @@ function Nav() {
             </div>
 
             <button
-className="px-6 py-3 rounded-full bg-[#9C7A2D] text-white hover:bg-[#8A6A24] transition"
-              onClick={() => setOpen(v => !v)}
-              aria-label="Open menu"
-              aria-expanded={open}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" />
-              </svg>
-            </button>
+  className="md:hidden inline-flex items-center justify-center rounded-xl p-2 hairline hover:bg-neutral-50 transition"
+  onClick={() => setOpen((v) => !v)}
+  aria-label="Open menu"
+  aria-expanded={open}
+>
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" />
+  </svg>
+</button>
           </div>
 
           {open ? (
