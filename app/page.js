@@ -432,6 +432,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 {/* WHAT I BUILD */}
 <section id="services" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
   <div className="mx-auto max-w-6xl">
