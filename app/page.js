@@ -133,6 +133,13 @@ export default function Home() {
         </div>
       </div>
       {/* RIGHT SIDE – IMAGE */}
+   <div className="relative">
+        <img
+          src={HERO_IMAGE}
+          alt="Vishnukantr portrait"
+          className="w-full h-auto rounded-3xl object-contain"
+        />
+      </div>
     </div>
   </div>
 </section>
