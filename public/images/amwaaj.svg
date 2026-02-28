@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#EFEFEF"/>
+      <stop offset="100%" stop-color="#E5E5E5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="65%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#111111" stop-opacity="0.08"/>
+      <stop offset="60%" stop-color="#111111" stop-opacity="0.00"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <text x="80" y="120" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#111" opacity="0.75">Add a premium Amwaaj image: /public/images/amwaaj.jpg</text>
+  <text x="80" y="190" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#111" opacity="0.55">Update AMWAAJ_IMAGE in app/page.js</text>
+</svg>
