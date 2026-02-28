@@ -57,7 +57,7 @@ function Nav() {
             <div className="md:hidden pb-4">
               <div className="grid gap-1 text-sm text-neutral-700">
                 <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#impact">Impact</a>
-                <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#amwaaj">Amwaajessakina</a>
+                <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#amwaajessakina">Amwaajessakina</a>
                 <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#cv">Download CV</a>
                 <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#contact">Contact</a>
                 <a className="mt-2 inline-flex items-center justify-center rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 transition" href="#contact">
