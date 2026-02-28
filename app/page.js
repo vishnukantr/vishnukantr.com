@@ -22,7 +22,7 @@ function Nav() {
           <div className="h-16 flex items-center justify-between">
            <a href="#top" className="flex items-center">
   <img
-    src="/logo.png"
+    src="/logo vk.png"
     alt="Vishnukant"
     className="h-9 w-auto"
   />
