@@ -102,45 +102,48 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]" />
 
         <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
-    <div className="grid md:grid-cols-2 gap-16 items-center">
-          <motion.div style={{ scale: heroScale, y: heroY, opacity: heroOpacity }} className="pt-8 md:pt-14">
-            <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">
-              Growth • Partnerships • Cultural Platforms
-            </p>
+   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
 
-            <h1 className="mt-5 text-4xl md:text-7xl font-semibold tracking-tight leading-[1.02]">
-              Vishnukant Ramachandran
-            </h1>
+  <div className="mt-14 md:mt-20 grid md:grid-cols-2 gap-12 items-center">
 
-            <p className="mt-6 text-lg md:text-2xl text-neutral-600 max-w-3xl">
-              Founder-minded Growth Strategist & Partnership Architect — building cross-market expansion,
-              premium narratives, and scalable ecosystems across the UAE and global markets.
-            </p>
+    {/* LEFT SIDE – TEXT */}
+    <div>
+      <p className="text-xs tracking-widest text-neutral-500 uppercase mb-4">
+        Growth • Partnerships • Cultural Platforms
+      </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-3">
-              <a href="#impact" className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white hover:bg-neutral-800 transition">
-                View Impact
-              </a>
-              <a href="#cv" className="inline-flex items-center justify-center rounded-full hairline bg-white px-6 py-3 text-sm font-medium hover:bg-neutral-50 transition">
-                Download CV
-              </a>
-            </div>
+      <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
+        Vishnukant Ramachandran
+      </h1>
 
-            <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl">
-              {[
-                ["Base", "Dubai • UAE"],
-                ["Status", "Golden Visa"],
-                ["Strength", "BD + Marketing"],
-                ["Mode", "Strategy → Execution"],
-              ].map(([k, v]) => (
-                <div key={k} className="rounded-2xl hairline bg-white/70 p-4 softshadow">
-                  <p className="text-xs text-neutral-500">{k}</p>
-                  <p className="mt-1 text-sm font-medium">{v}</p>
-                </div>
-              ))}
-            </div>
-          </motion.div>
+      <p className="mt-6 text-lg text-neutral-600 max-w-xl">
+        Founder-minded Growth Strategist & Partnership Architect — building
+        cross-market expansion, premium narratives, and scalable ecosystems
+        across the UAE and global markets.
+      </p>
+
+      <div className="mt-8 flex gap-4">
+        <a href="#impact" className="px-6 py-3 bg-black text-white rounded-full">
+          View Impact
+        </a>
+        <a href="#cv" className="px-6 py-3 border border-neutral-300 rounded-full">
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    {/* RIGHT SIDE – IMAGE */}
+    <div className="relative">
+      <img
+        src={HERO_IMAGE}
+        alt="Vishnukantr portrait"
+        className="w-full rounded-3xl object-contain"
+      />
+    </div>
+
   </div>
+
+</div>
 
           <motion.div style={{ y: heroImgY }} className="mt-14 md:mt-20">
             <div className="rounded-[32px] overflow-hidden hairline bg-white softshadow">
