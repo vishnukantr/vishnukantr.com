@@ -259,22 +259,26 @@ export default function Home() {
     </div>
   </div>
 </section>
-      {/* PLATFORM CASE STUDY — AMWAAJESSAKINA */}
+{/* PLATFORM CASE STUDY — AMWAAJESSAKINA */}
 <section id="amwaajessakina" className="bg-neutral-950 text-white">
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14 py-16 md:py-24">
-    <div className="grid md:grid-cols-2 gap-10 items-start">
+    {/* changed: items-center + a bit more gap */}
+    <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
 
       {/* LEFT — IMAGE */}
-      <motion.div className="rounded-3xl overflow-hidden bg-white/5 ring-1 ring-white/10" style={{ y: amwaajImgY }}>
+      <motion.div
+        className="rounded-3xl overflow-hidden bg-white/5 ring-1 ring-white/10"
+        style={{ y: amwaajImgY }}
+      >
         <img
           src={AMWAAJ_IMAGE}
           alt="Amwaajessakina premium visual"
-          className="w-full h-[280px] md:h-[520px] object-cover"
+          className="w-full h-[320px] md:h-[520px] object-cover"
         />
       </motion.div>
 
       {/* RIGHT — TEXT */}
-      <div className="md:pt-4">
+      <div className="md:pl-2">
         <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">
           Platform Case Study — Amwaajessakina
         </p>
