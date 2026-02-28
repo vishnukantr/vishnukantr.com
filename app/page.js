@@ -257,13 +257,6 @@ export default function Home() {
           </Reveal>
 
           <div className="mt-14 grid lg:grid-cols-12 gap-8 items-center">
-            <motion.div style={{ y: amwaajImgY }} className="lg:col-span-7">
-              <div className="rounded-[32px] overflow-hidden hairline bg-white cardshadow">
-                <img src={AMWAAJ_IMAGE} alt="Amwaajessakina" className="w-full h-[360px] md:h-[460px] object-cover" />
-              </div>
-              <p className="mt-3 text-xs text-neutral-500">Replace this with a premium Amwaajessakina image (majlis / desert / hosting aesthetic).</p>
-            </motion.div>
-
             <Reveal>
               <div className="lg:col-span-5">
                 <div className="rounded-[28px] bg-neutral-900 text-white p-7 softshadow">
