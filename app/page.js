@@ -81,7 +81,32 @@ return (
     </div>
   </header>
 );
+} 
+function ScrollProgress() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useTransform(scrollYProgress, [0, 1], [0.02, 1]);
+  return (
+    <motion.div
+      style={{ scaleX }}
+      className="fixed left-0 top-0 h-[2px] w-full origin-left bg-[#9C7A2D] z-[60]"
+    />
+  );
+}
 
+export default function Home() {
+  const { scrollY } = useScroll();
+
+  const heroScale = useTransform(scrollY, [0, 380], [1, 0.92]);
+  const heroY = useTransform(scrollY, [0, 420], [0, -40]);
+  const heroOpacity = useTransform(scrollY, [0, 520], [1, 0]);
+
+  const heroImgY = useTransform(scrollY, [0, 600], [0, 24]);
+  const amwaajImgY = useTransform(scrollY, [900, 1700], [32, -32]);
+
+  return (
+    <main id="top" className="overflow-x-hidden font-sans">
+      <ScrollProgress />
+      <Nav />
       {/* HERO */}
 <motion.section
   className="relative min-h-[100vh] pt-24"
