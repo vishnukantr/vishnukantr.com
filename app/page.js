@@ -97,7 +97,6 @@ function ScrollProgress() {
 export default function Home() {
   const { scrollY } = useScroll();
 
-  const heroScale = useTransform(scrollY, [0, 380], [1, 0.92]);
   const heroY = useTransform(scrollY, [0, 420], [0, -40]);
   const heroOpacity = useTransform(scrollY, [0, 520], [1, 0]);
 
@@ -110,8 +109,14 @@ export default function Home() {
       <Nav />
       {/* HERO */}
 <motion.section
-  className="relative min-h-[100vh] pt-24"
-  style={{ scale: heroScale, y: heroY, opacity: heroOpacity }}
+  className="relative min-h-[100vh] pt-24 will-change-transform"
+  style={{
+    scale: heroScale,
+    y: heroY,
+    opacity: heroOpacity,
+    backfaceVisibility: "hidden",
+    transformStyle: "preserve-3d"
+  }}
 >
   <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]" />
 
