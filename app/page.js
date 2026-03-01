@@ -63,10 +63,15 @@ function Nav() {
                 <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#impact">Impact</a>
                 <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#amwaajessakina">Amwaajessakina</a>
                 <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#cv">Download CV</a>
-                <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#contact">Contact</a>
-                <a className="mt-2 inline-flex items-center justify-center rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 transition" href="#contact">
-                  Book a Call
-                </a>
+                <a
+  href="#contact"
+  className="mt-2 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium text-white transition"
+  style={{ backgroundColor: ACCENT }}
+  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = ACCENT_HOVER)}
+  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = ACCENT)}
+>
+  Book a Call
+</a>
               </div>
             </div>
           ) : null}
@@ -82,7 +87,7 @@ function ScrollProgress() {
   return (
     <motion.div
       style={{ scaleX }}
-      className="fixed left-0 top-0 h-[2px] w-full origin-left bg-neutral-900/80 z-[60]"
+className="fixed left-0 top-0 h-[2px] w-full origin-left bg-[#9C7A2D] z-[60]"
     />
   );
 }
@@ -267,7 +272,10 @@ export default function Home() {
   </div>
 </section>
 {/* PLATFORM CASE STUDY — AMWAAJESSAKINA */}
-<section id="amwaajessakina" className="bg-neutral-950 text-white">
+<section
+  id="amwaajessakina"
+  className="bg-neutral-950 text-white bg-[radial-gradient(900px_500px_at_20%_0%,rgba(156,122,45,0.12),transparent_60%)]"
+>
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14 py-16 md:py-24">
     {/* changed: items-center + a bit more gap */}
     <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
@@ -327,7 +335,7 @@ export default function Home() {
   </div>
 </section>
 {/* AMWAAJESSAKINA — PREMIUM VISUAL STORYTELLING */}
-<section className="bg-neutral-950 text-white">
+<section className="bg-neutral-950 text-white bg-[radial-gradient(900px_500px_at_80%_0%,rgba(156,122,45,0.10),transparent_60%)]">
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14 py-16 md:py-24">
     <Reveal>
       <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">
@@ -446,7 +454,7 @@ export default function Home() {
   alt={file.replace(".png", "")}
   width={160}
   height={60}
-  className="object-contain opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition duration-500"
+className="object-contain opacity-80 group-hover:opacity-100 transition duration-500"
 />
             </div>
           </div>
@@ -501,7 +509,10 @@ export default function Home() {
   </div>
 </section>
 {/* PHILOSOPHY */}
-<section id="philosophy" className="bg-neutral-950 text-white py-24 md:py-32 px-6 md:px-10 lg:px-14">
+<section
+  id="philosophy"
+  className="bg-neutral-950 text-white py-24 md:py-32 px-6 md:px-10 lg:px-14 bg-[radial-gradient(900px_500px_at_20%_0%,rgba(156,122,45,0.10),transparent_60%)]"
+>
   <div className="mx-auto max-w-6xl">
     <Reveal>
       <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">Philosophy</p>
@@ -561,7 +572,10 @@ export default function Home() {
         </div>
       </section>
 {/* CONTACT */}
-<section id="contact" className="py-24 md:py-32 bg-neutral-950 text-white px-6 md:px-10 lg:px-14">
+<section
+  id="contact"
+  className="py-24 md:py-32 bg-neutral-950 text-white px-6 md:px-10 lg:px-14 bg-[radial-gradient(900px_500px_at_80%_0%,rgba(156,122,45,0.12),transparent_60%)]"
+>
   <div className="mx-auto max-w-6xl">
     <Reveal>
       <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">Contact</p>
