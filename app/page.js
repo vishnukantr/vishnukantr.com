@@ -96,7 +96,7 @@ function ScrollProgress() {
 
 export default function Home() {
   const { scrollY } = useScroll();
-
+  const heroScale = 1;
   const heroY = useTransform(scrollY, [0, 420], [0, -40]);
   const heroOpacity = useTransform(scrollY, [0, 520], [1, 0]);
 
