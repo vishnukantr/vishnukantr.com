@@ -667,7 +667,7 @@ className="object-contain opacity-80 group-hover:opacity-100 transition duration
 
         <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 px-6 py-5">
           <p className="text-sm text-white/50">Email</p>
-          <p className="mt-1 font-medium">youremail@example.com</p>
+          <p className="mt-1 font-medium">vishnur2707@gmail.com</p>
         </div>
 
         <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 px-6 py-5">
@@ -683,12 +683,12 @@ className="object-contain opacity-80 group-hover:opacity-100 transition duration
         <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 px-6 py-5">
           <p className="text-sm text-white/50">LinkedIn</p>
           <a
-            href="https://linkedin.com/in/your-handle"
+            href="https://www.linkedin.com/in/vishnukant-ramachandran/"
             target="_blank"
             rel="noreferrer"
             className="mt-1 font-medium hover:text-white"
           >
-            linkedin.com/in/your-handle
+            linkedin.com/in/vishnukant-ramachandran/
           </a>
         </div>
 
