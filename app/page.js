@@ -43,7 +43,7 @@ function Nav() {
               </a>
             </div>
 
-            <button
+<button
   className="md:hidden inline-flex items-center justify-center rounded-xl p-2 hairline hover:bg-neutral-50 transition"
   onClick={() => setOpen((v) => !v)}
   aria-label="Open menu"
