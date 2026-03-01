@@ -646,38 +646,119 @@ className="object-contain opacity-80 group-hover:opacity-100 transition duration
   id="contact"
   className="py-24 md:py-32 bg-neutral-950 text-white px-6 md:px-10 lg:px-14 bg-[radial-gradient(900px_500px_at_80%_0%,rgba(156,122,45,0.12),transparent_60%)]"
 >
-  <div className="mx-auto max-w-6xl">
-    <Reveal>
-      <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">Contact</p>
-      <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-        Let’s build something that scales with integrity.
-      </h2>
+  <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-16 items-start">
 
-      <p className="mt-5 text-base md:text-lg text-white/70 max-w-3xl">
-        Dubai, United Arab Emirates
+    {/* LEFT SIDE */}
+    <div>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-white/60">
+        Contact
       </p>
 
-      <div className="mt-10 flex flex-col sm:flex-row gap-3">
+      <h2 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
+        Let’s build your next growth win.
+      </h2>
+
+      <p className="mt-6 text-lg text-white/70 max-w-md">
+        Tell me what you’re building — I’ll respond with a short plan and next steps.
+      </p>
+
+      {/* Contact Cards */}
+      <div className="mt-12 space-y-6">
+
+        <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 px-6 py-5">
+          <p className="text-sm text-white/50">Email</p>
+          <p className="mt-1 font-medium">youremail@example.com</p>
+        </div>
+
+        <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 px-6 py-5">
+          <p className="text-sm text-white/50">WhatsApp</p>
+          <a
+            href="https://wa.me/971521967770"
+            className="mt-1 font-medium hover:text-white"
+          >
+            +971 52 196 7770
+          </a>
+        </div>
+
+        <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 px-6 py-5">
+          <p className="text-sm text-white/50">LinkedIn</p>
+          <a
+            href="https://linkedin.com/in/your-handle"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-1 font-medium hover:text-white"
+          >
+            linkedin.com/in/your-handle
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    {/* RIGHT SIDE — FORM CARD */}
+    <div className="bg-white text-neutral-900 rounded-[32px] p-8 md:p-10 shadow-2xl">
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <div>
+          <label className="text-sm text-neutral-500">Name</label>
+          <input
+            type="text"
+            placeholder="Your name"
+            className="mt-2 w-full rounded-xl border border-neutral-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900"
+          />
+        </div>
+
+        <div>
+          <label className="text-sm text-neutral-500">Email</label>
+          <input
+            type="email"
+            placeholder="you@company.com"
+            className="mt-2 w-full rounded-xl border border-neutral-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900"
+          />
+        </div>
+      </div>
+
+      <div className="mt-6">
+        <label className="text-sm text-neutral-500">What do you need?</label>
+        <select className="mt-2 w-full rounded-xl border border-neutral-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900">
+          <option>Business Development & Partnerships</option>
+          <option>Market Entry Strategy</option>
+          <option>Brand & Growth Strategy</option>
+          <option>Strategic Advisory</option>
+        </select>
+      </div>
+
+      <div className="mt-6">
+        <label className="text-sm text-neutral-500">Message</label>
+        <textarea
+          rows="5"
+          placeholder="Share goals, timeline, budget range (optional), and what success looks like."
+          className="mt-2 w-full rounded-xl border border-neutral-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-900"
+        />
+      </div>
+
+      <div className="mt-8 flex items-center gap-4">
+        <button className="rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white hover:bg-neutral-800 transition">
+          Send message
+        </button>
+
         <a
-          href="mailto:youremail@example.com"
-          className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-100 transition"
+          href="#top"
+          className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-medium hover:bg-neutral-100 transition"
         >
-          Email
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition"
-        >
-          LinkedIn
+          Back to top
         </a>
       </div>
 
-      <p className="mt-10 text-sm text-white/50">
-        © {new Date().getFullYear()} Vishnukant Ramachandran
+      <p className="mt-6 text-xs text-neutral-500">
+        To make this form live, connect it to Formspree / Netlify Forms / or your own backend endpoint.
       </p>
-    </Reveal>
+
+    </div>
+  </div>
+
+  <div className="mt-20 text-center text-sm text-white/40">
+    © {new Date().getFullYear()} Vishnukant Ramachandran
   </div>
 </section>
     </main>
