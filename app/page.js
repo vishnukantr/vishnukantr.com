@@ -135,9 +135,12 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex gap-4 flex-wrap">
-          <a href="#impact" className="px-6 py-3 bg-black text-white rounded-full">
-            View Selected Work
-          </a>
+<a
+  href="#impact"
+  className="px-6 py-3 rounded-full bg-[#9C7A2D] text-white hover:bg-[#8A6A24] transition"
+>
+  View Selected Work
+</a>
           <a href="#contact" className="px-6 py-3 border border-neutral-300 rounded-full">
             Connect
           </a>
