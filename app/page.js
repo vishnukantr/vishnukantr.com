@@ -17,97 +17,70 @@ function Nav() {
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
-  return (
-    <header className="fixed top-0 inset-x-0 z-50">
-      <div className="glass">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
-          <div className="h-16 flex items-center justify-between">
-           <a href="#top" className="flex items-center">
-  <img
-    src="/images/logovk.png"
-    alt="logovk"
-    className="h-9 w-auto"
-  />
-</a>
+return (
+  <header className="fixed top-0 inset-x-0 z-50">
+    <div className="glass">
+      <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
+        <div className="h-16 flex items-center justify-between">
 
-            <nav className="hidden md:flex items-center gap-7 text-sm text-neutral-700">
-              <a className="hover:text-neutral-900" href="#impact">Impact</a>
-              <a className="hover:text-neutral-900" href="#amwaajessakina">Amwaajessakina</a>
-              <a className="hover:text-neutral-900" href="#cv">CV</a>
-              <a className="hover:text-neutral-900" href="#contact">Contact</a>
-            </nav>
+          <a href="#top" className="flex items-center">
+            <img
+              src="/images/logovk.png"
+              alt="logovk"
+              className="h-9 w-auto"
+            />
+          </a>
 
-            <div className="hidden md:flex items-center gap-3">
-<a
-  href="#contact"
-  className="inline-flex items-center justify-center rounded-full bg-[#9C7A2D] px-4 py-2 text-sm font-medium text-white hover:bg-[#8A6A24] transition"
->
-  Book a Call
-</a>
+          <nav className="hidden md:flex items-center gap-7 text-sm text-neutral-700">
+            <a className="hover:text-neutral-900" href="#impact">Impact</a>
+            <a className="hover:text-neutral-900" href="#amwaajessakina">Amwaajessakina</a>
+            <a className="hover:text-neutral-900" href="#cv">CV</a>
+            <a className="hover:text-neutral-900" href="#contact">Contact</a>
+          </nav>
 
-<button
-  className="md:hidden inline-flex items-center justify-center rounded-xl p-2 hairline hover:bg-neutral-50 transition"
-  onClick={() => setOpen((v) => !v)}
-  aria-label="Open menu"
-  aria-expanded={open}
->
-  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
-    <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" />
-  </svg>
-</button>
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center rounded-full bg-[#9C7A2D] px-4 py-2 text-sm font-medium text-white hover:bg-[#8A6A24] transition"
+            >
+              Book a Call
+            </a>
           </div>
 
-          {open ? (
-            <div className="md:hidden pb-4">
-              <div className="grid gap-1 text-sm text-neutral-700">
-                <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#impact">Impact</a>
-                <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#amwaajessakina">Amwaajessakina</a>
-                <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#cv">Download CV</a>
-                <a
-  href="#contact"
-  className="mt-2 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium text-white transition"
-  style={{ backgroundColor: ACCENT }}
-  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = ACCENT_HOVER)}
-  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = ACCENT)}
->
-  Book a Call
-</a>
-              </div>
-            </div>
-          ) : null}
+          <button
+            className="md:hidden inline-flex items-center justify-center rounded-xl p-2 hairline hover:bg-neutral-50 transition"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Open menu"
+            aria-expanded={open}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+
         </div>
+
+        {open && (
+          <div className="md:hidden pb-4">
+            <div className="grid gap-1 text-sm text-neutral-700">
+              <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#impact">Impact</a>
+              <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#amwaajessakina">Amwaajessakina</a>
+              <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#cv">Download CV</a>
+              <a className="rounded-xl px-3 py-2 hover:bg-neutral-50" href="#contact">Contact</a>
+              <a
+                href="#contact"
+                className="mt-2 inline-flex items-center justify-center rounded-full bg-[#9C7A2D] px-4 py-2 text-sm font-medium text-white hover:bg-[#8A6A24] transition"
+              >
+                Book a Call
+              </a>
+            </div>
+          </div>
+        )}
+
       </div>
-    </header>
-  );
-}
-
-function ScrollProgress() {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useTransform(scrollYProgress, [0, 1], [0.02, 1]);
-  return (
-    <motion.div
-      style={{ scaleX }}
-className="fixed left-0 top-0 h-[2px] w-full origin-left bg-[#9C7A2D] z-[60]"
-    />
-  );
-}
-
-export default function Home() {
-  const { scrollY } = useScroll();
-
-  // Cinematic hero transforms
-  const heroScale = useTransform(scrollY, [0, 380], [1, 0.92]);
-  const heroY = useTransform(scrollY, [0, 420], [0, -40]);
-  const heroOpacity = useTransform(scrollY, [0, 520], [1, 0]);
-
-  // Image parallax
-  const heroImgY = useTransform(scrollY, [0, 600], [0, 24]);
-  const amwaajImgY = useTransform(scrollY, [900, 1700], [32, -32]);
-
-  return (
-    <main id="top" className="overflow-x-hidden font-sans">
-      <ScrollProgress />
-      <Nav />
+    </div>
+  </header>
+);
 
       {/* HERO */}
 <motion.section
