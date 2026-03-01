@@ -96,10 +96,12 @@ function ScrollProgress() {
 
 export default function Home() {
   const { scrollY } = useScroll();
-  const heroScale = 1;
-  const heroY = useTransform(scrollY, [0, 420], [0, -40]);
 
-  const heroImgY = useTransform(scrollY, [0, 600], [0, 24]);
+  // Apple-style: text stays stable, only image + background drift slightly
+  const heroImgY = useTransform(scrollY, [0, 800], [0, 16]);
+  const heroBgY = useTransform(scrollY, [0, 800], [0, 28]);
+
+  const amwaajImgY = useTransform(scrollY, [900, 1700], [32, -32]);
   const amwaajImgY = useTransform(scrollY, [900, 1700], [32, -32]);
 
   return (
@@ -107,12 +109,11 @@ export default function Home() {
       <ScrollProgress />
       <Nav />
       {/* HERO */}
-<motion.section
-  className="relative min-h-[100vh] pt-24 will-change-transform"
-  style={{ y: heroY }}
->
-  <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]" />
-
+<section className="relative min-h-[100vh] pt-24">
+  <motion.div
+    style={{ y: heroBgY }}
+    className="absolute inset-0 -z-10 will-change-transform bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]"
+  />
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
     <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       
