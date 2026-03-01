@@ -194,7 +194,7 @@ export default function Home() {
     {/* LEFT: Image */}
     <div className="rounded-[36px] bg-neutral-100 ring-1 ring-neutral-200 aspect-square overflow-hidden">
       <img
-        src="/images/vishnu3.png"
+        src="/images/vishnu4.png"
         alt="Vishnukant"
         className="w-full h-full object-cover"
       />
