@@ -98,7 +98,6 @@ export default function Home() {
   const { scrollY } = useScroll();
   const heroScale = 1;
   const heroY = useTransform(scrollY, [0, 420], [0, -40]);
-  const heroOpacity = useTransform(scrollY, [0, 520], [1, 0]);
 
   const heroImgY = useTransform(scrollY, [0, 600], [0, 24]);
   const amwaajImgY = useTransform(scrollY, [900, 1700], [32, -32]);
@@ -110,13 +109,7 @@ export default function Home() {
       {/* HERO */}
 <motion.section
   className="relative min-h-[100vh] pt-24 will-change-transform"
-  style={{
-    scale: heroScale,
-    y: heroY,
-    opacity: heroOpacity,
-    backfaceVisibility: "hidden",
-    transformStyle: "preserve-3d"
-  }}
+  style={{ y: heroY }}
 >
   <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]" />
 
