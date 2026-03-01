@@ -102,7 +102,6 @@ export default function Home() {
   const heroBgY = useTransform(scrollY, [0, 800], [0, 28]);
 
   const amwaajImgY = useTransform(scrollY, [900, 1700], [32, -32]);
-  const amwaajImgY = useTransform(scrollY, [900, 1700], [32, -32]);
 
   return (
     <main id="top" className="overflow-x-hidden font-sans">
@@ -110,10 +109,12 @@ export default function Home() {
       <Nav />
       {/* HERO */}
 <section className="relative min-h-[100vh] pt-24">
+  {/* parallax background — moves slightly with scroll */}
   <motion.div
     style={{ y: heroBgY }}
     className="absolute inset-0 -z-10 will-change-transform bg-[radial-gradient(1200px_700px_at_20%_10%,rgba(0,0,0,0.06),transparent_60%),radial-gradient(900px_600px_at_80%_0%,rgba(0,0,0,0.04),transparent_55%)]"
   />
+
   <div className="mx-auto max-w-6xl px-6 md:px-10 lg:px-14">
     <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       
@@ -140,12 +141,12 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex gap-4 flex-wrap">
-<a
-  href="#impact"
-  className="px-6 py-3 rounded-full bg-[#9C7A2D] text-white hover:bg-[#8A6A24] transition"
->
-  View Selected Work
-</a>
+          <a
+            href="#impact"
+            className="px-6 py-3 rounded-full bg-[#9C7A2D] text-white hover:bg-[#8A6A24] transition"
+          >
+            View Selected Work
+          </a>
           <a href="#contact" className="px-6 py-3 border border-neutral-300 rounded-full">
             Connect
           </a>
@@ -156,14 +157,14 @@ export default function Home() {
       <motion.div className="relative" style={{ y: heroImgY }}>
         <img
           src={HERO_IMAGE}
-          alt="Vishnukantr portrait"
+          alt="Vishnukant portrait"
           className="w-full h-auto rounded-3xl object-contain"
         />
       </motion.div>
 
     </div>
   </div>
-</motion.section>
+</section>
         {/* Cinematic black transition */}
         <div className="mt-20 md:mt-28">
           <div className="bg-neutral-950 text-white">
