@@ -485,7 +485,7 @@ export default function Home() {
 
     {/* Logo Grid Container */}
     <div className="mt-14 rounded-3xl bg-white ring-1 ring-neutral-200 p-8 md:p-10 shadow-sm">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-10 gap-x-10 items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-10 gap-y-10 place-items-center">
 
         {[
           "bbc.png",
@@ -509,10 +509,7 @@ export default function Home() {
           "thesayinvestments.png",
           "dialsmith.png",
         ].map((file) => (
-          <div
-            key={file}
-            className="flex items-center justify-center group"
-          >
+          <div key={file} className="group flex items-center justify-center w-full h-24 md:h-28">
             <div className="w-full flex items-center justify-center">
   <div className="relative h-16 w-40 md:h-20 md:w-44">
     <Image
