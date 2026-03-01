@@ -187,7 +187,73 @@ export default function Home() {
             </div>
           </div>
         </div>
+{/* ABOUT */}
+<section id="about" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
+  <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+    
+    {/* LEFT: Image */}
+    <div className="rounded-[36px] bg-neutral-100 ring-1 ring-neutral-200 aspect-square overflow-hidden">
+      <img
+        src="/images/about.jpg"
+        alt="Vishnukant"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
+    {/* RIGHT: Content */}
+    <div>
+      <p className="text-[11px] tracking-[0.22em] uppercase text-neutral-500">
+        About
+      </p>
+
+      <h2 className="mt-3 text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
+        A builder mindset for premium brands.
+      </h2>
+
+      <p className="mt-6 text-lg text-neutral-600 max-w-2xl">
+        I’m Vishnukant Ramachandran — Dubai-based since 2020 — working at the intersection of{" "}
+        <span className="text-neutral-900 font-medium">
+          business development, growth strategy, and strategic partnerships
+        </span>.
+        I help premium brands and platforms expand into new markets by combining{" "}
+        <span className="text-neutral-900 font-medium">
+          relationship-led dealmaking
+        </span>{" "}
+        with{" "}
+        <span className="text-neutral-900 font-medium">
+          structured, data-backed execution
+        </span>.
+        <br /><br />
+        Across the UAE, UK, and India, I’ve built go-to-market strategies, secured cross-border partnerships, and translated insights into decisive action — from positioning and storytelling to pipeline development and operational delivery.
+        <br /><br />
+        I’m at my best in high-trust, high-standards environments — where ambition is clear, stakeholders are complex, and outcomes matter.
+      </p>
+
+      {/* Principles */}
+      <div className="mt-8 grid sm:grid-cols-3 gap-4">
+        {["Clarity", "Taste", "Outcomes"].map((item) => (
+          <div
+            key={item}
+            className="rounded-2xl bg-white ring-1 ring-neutral-200 px-5 py-4"
+          >
+            <p className="text-xs text-neutral-500">Principle</p>
+            <p className="mt-1 font-semibold text-neutral-900">{item}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Buttons */}
+      <div className="mt-10 flex flex-wrap gap-4">
+        <a
+          href="#contact"
+          className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white hover:bg-neutral-800 transition"
+        >
+          Work with me
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
      {/* EXECUTIVE SNAPSHOT */}
 <section id="snapshot" className="py-24 md:py-32 px-6 md:px-10 lg:px-14">
   <div className="mx-auto max-w-6xl">
