@@ -513,15 +513,17 @@ export default function Home() {
             key={file}
             className="flex items-center justify-center group"
           >
-            <div className="h-12 w-full max-w-[150px] flex items-center justify-center">
-<Image
-  src={`/logos/${file}`}
-  alt={file.replace(".png", "")}
-  width={160}
-  height={60}
-className="object-contain opacity-80 group-hover:opacity-100 transition duration-500"
-/>
-            </div>
+            <div className="w-full flex items-center justify-center">
+  <div className="relative h-16 w-40 md:h-20 md:w-44">
+    <Image
+      src={`/logos/${file}`}
+      alt={file.replace(".png", "")}
+      fill
+      sizes="(max-width: 768px) 160px, 176px"
+      className="object-contain opacity-80 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition duration-500"
+    />
+  </div>
+</div>
           </div>
         ))}
 
