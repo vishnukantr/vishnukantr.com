@@ -364,17 +364,31 @@ export default function Home() {
         </Reveal>
       ))}
     </div>
-
-    {/* Optional: a “gallery strip” feel using your same AMWAAJ_IMAGE for now */}
     <Reveal>
-      <div className="mt-10 rounded-3xl overflow-hidden ring-1 ring-white/10 bg-white/5">
-        <div className="grid md:grid-cols-3">
-          <img src={uaeculture.png} className="h-[220px] w-full object-cover" alt="uaeculture" />
-          <img src={desertvibe.png} className="h-[220px] w-full object-cover" alt="desertvibe" />
-          <img src={hospitality.png} className="h-[220px] w-full object-cover" alt="hospitality" />
-        </div>
-      </div>
-    </Reveal>
+  <div className="mt-10 rounded-3xl overflow-hidden ring-1 ring-white/10 bg-white/5">
+    <div className="grid md:grid-cols-3">
+      
+      <img
+        src="/images/uaeculture.png"
+        className="h-[220px] w-full object-cover"
+        alt="UAE culture"
+      />
+
+      <img
+        src="/images/desertvibe.png"
+        className="h-[220px] w-full object-cover"
+        alt="Desert vibe"
+      />
+
+      <img
+        src="/images/hospitality.png"
+        className="h-[220px] w-full object-cover"
+        alt="Emirati hospitality"
+      />
+
+    </div>
+  </div>
+</Reveal>
   </div>
 </section>
 {/* BRANDS & PARTNERS */}
