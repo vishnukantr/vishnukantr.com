@@ -38,10 +38,9 @@ function Nav() {
             </nav>
 
             <div className="hidden md:flex items-center gap-3">
-              <a href="#contact" className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 transition">
-                Book a Call
-              </a>
-            </div>
+<a href="#contact" className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 transition">
+  Book a Call
+</a>
 
 <button
   className="md:hidden inline-flex items-center justify-center rounded-xl p-2 hairline hover:bg-neutral-50 transition"
