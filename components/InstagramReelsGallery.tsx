@@ -14,39 +14,34 @@ const ACCENT = "#9C7A2D";
 
 const REELS: ReelItem[] = [
   {
-    title: "AI Website Build",
+    title: "Amwaajessakina Featured",
     permalink: "https://www.instagram.com/reel/DShDHt-EwJJ/",
     cover: "/images/ig/ig-1.jpg",
   },
   {
-    title: "Website Launch",
+    title: "Podcasts",
     permalink: "https://www.instagram.com/reel/DSKc_1_EUR3/",
     cover: "/images/ig/ig-2.jpg",
   },
   {
-    title: "Growth Strategy",
+    title: "Influencer Collabs",
     permalink: "https://www.instagram.com/reel/DQ6ZkN_jYIn/",
     cover: "/images/ig/ig-3.jpg",
   },
   {
-    title: "Dubai Business Story",
+    title: "Dubai Life Content",
     permalink: "https://www.instagram.com/reel/DQmU-Aokpu3/",
     cover: "/images/ig/ig-4.jpg",
   },
   {
-    title: "Strategic Thinking",
+    title: "Personal Branding",
     permalink: "https://www.instagram.com/reel/DQJXWaikZYq/",
     cover: "/images/ig/ig-5.jpg",
   },
   {
-    title: "Entrepreneurship",
+    title: "Content Creation",
     permalink: "https://www.instagram.com/reel/DSEOK05kzxL/",
     cover: "/images/ig/ig-6.jpg",
-  },
-  {
-    title: "Building Platforms",
-    permalink: "https://www.instagram.com/reel/DQzWYlfkhJl/",
-    cover: "/images/ig/ig-7.jpg",
   },
 ];
 
