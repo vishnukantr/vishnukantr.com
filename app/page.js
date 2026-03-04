@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Reveal } from "@/components/Reveal";
+import InstagramReelsGallery from "@/components/InstagramReelsGallery";
 import { useEffect, useState } from "react";
 
 const HERO_IMAGE = "/images/hero.jpg";  
@@ -35,6 +36,7 @@ return (
           <nav className="hidden md:flex items-center gap-7 text-sm text-neutral-700">
             <a className="hover:text-neutral-900" href="#impact">Impact</a>
             <a className="hover:text-neutral-900" href="#amwaajessakina">Amwaajessakina</a>
+            <a className="hover:text-neutral-900" href="#instagram">Instagram</a>
             <a className="hover:text-neutral-900" href="#cv">CV</a>
             <a className="hover:text-neutral-900" href="#contact">Contact</a>
           </nav>
@@ -465,6 +467,7 @@ export default function Home() {
 </Reveal>
   </div>
 </section>
+<InstagramReelsGallery />
 {/* BRANDS & PARTNERS */}
 <section className="py-20 md:py-28 bg-gradient-to-b from-neutral-50 to-white px-6 md:px-10 lg:px-14">
   <div className="mx-auto max-w-6xl">
