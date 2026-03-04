@@ -92,7 +92,7 @@ export default function InstagramReelsGallery() {
           Selected reels sharing ideas, projects, and moments from my professional journey.
         </p>
 
-        <div className="mt-12 flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory">
+        <div className="mt-12 flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory reel-scroll">
 
           {REELS.map((item) => (
             <button
