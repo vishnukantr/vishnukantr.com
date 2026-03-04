@@ -92,14 +92,14 @@ export default function InstagramReelsGallery() {
           Selected reels sharing ideas, projects, and moments from my professional journey.
         </p>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory">
 
           {REELS.map((item) => (
             <button
-              key={item.permalink}
-              onClick={() => setActive(item)}
-              className="group text-left rounded-[28px] hairline bg-white softshadow hover:translate-y-[-2px] transition"
-            >
+  key={item.permalink}
+  onClick={() => setActive(item)}
+  className="group min-w-[260px] md:min-w-[300px] snap-start text-left rounded-[28px] hairline bg-white softshadow hover:translate-y-[-2px] transition"
+>
 
               <div className="relative aspect-[9/16] overflow-hidden rounded-[28px]">
 
